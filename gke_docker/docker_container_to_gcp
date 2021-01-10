@@ -1,0 +1,5 @@
+docker image build -t "gke_ml_service" .
+
+docker login -u _json_key --password-stdin https://gcr.io < {gcp_credentials.json}
+docker tag gke_ml_service gcr.io/{gcp_product_id}/gke_ml_service
+docker push gcr.io/{gcp_product_id}/gke_ml_service

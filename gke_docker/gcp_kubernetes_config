@@ -1,0 +1,16 @@
+To create a cluster
+
+1. Go to "Kubernetes Engine"
+2. Click "Deploy Container"
+3. Select "Existing Container Image"
+4. Choose "gke_ml_service:latest"
+5. Assign an application name
+6. Deploy
+
+To expose a cluster on the web
+
+1. From the GKE menu, select the cluster
+2. Click on "Workloads"
+3. Choose the application name as a workload
+4. Select the "Actions" tab and then "Expose"
+5. For service type, select "load balancer"
