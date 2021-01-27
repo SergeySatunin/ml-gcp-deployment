@@ -1,0 +1,5 @@
+docker image build -t "dummy_pipeline" .
+
+docker login -u _json_key --password-stdin https://gcr.io < {gcp_credentials.json}
+docker tag dummy_pipeline gcr.io/{gcp_product_id}/dummy_pipeline
+docker push gcr.io/{gcp_product_id}/dummy_pipeline
